@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Personal Portfolio </title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/c3cd68b076.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- main logo / nav -->
+  <div id="header">
+      <nav>
+        <img src="Images Portfolio/logo.png" width="200px" height="100px" class="Logo" />
+        <ul>
+          <li class="tab"><a href="#">Home</a></li>
+          <li class="tab"><a href="#">About</a></li>
+          <li class="tab"><a href="#">Portfolio</a></li>
+          <li class="tab"><a href="#">Contact</a></li>
+
+        </ul>
+      </nav>
+  </div>
+
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div class="header-text">
+      <p> Software developer</p>
+      <h1> Hi, Im <span> Krupa</span><br>a passionate future software engineer</h1>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+
+
+    <!--------------- about me -------------->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="">
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p> Hi im krupa hfvlarzifvvilzfvlzfvl`sfvil`sfvl</p>
+            <div class="tab-titles">
+
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Web Development</span><br>developing website </li>
+              </ul>
+
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>Web Development</span><br>developing website </li>
+              </ul>
+
+            </div>
+
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>EDX 2023-2024</span><br>Front End Bootcamp</li>
+                <li><span>The University Of Law 2022-2023</span><br>lpc With Msc</li>
+                <li><span>University Of East London 2019-2022</span><br>Business law </li>
+              </ul>
+
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classlist.add("active-tab");
+        }
+
+      </script>
+
+    </section>
+
+    <!-------------------portfolio container-------------------->
+
+
+    <section class="page-section" id="Portfolio">
+      <div class="container">
+        <h3 class="sub-title">My Work</h3>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images Portfolio/discordapp.png" >
+            <div class="layer">
+              <h4> Discord Bot App </h4>
+              <p> The discord bot allows you to stream music from any platform on your discord server</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Images Portfolio/snakegame.png">
+          <div class="layer">
+            <h4> Snake game </h4>
+            <p> created snake game using html css and javascript </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+
+        </div>
+      
+
+      <div class="work">
+        <img src="Images Portfolio/financial calculator.png">
+         <div class = "layer">
+          <h4> financial calculator </h4>
+          <p> the financial calculator allows you to manage your budget and income</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+      </div>
+      
+    </section>
+
+    <!-------------------------contact----------------------------------- -->
+
+
+    <section class="page-section contact" id="contact">
+      <div class="flex-container">
+        <h2 class="sub-title">Contact Me</h2> 
+         <p><a href="mailto: krupiikaa@gmail.com"></a> <i class="fa-solid fa-envelope"></i> krupiikaa@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 012345678</p>
+          </div>
+  
+           <div class="social icons">
+              <a href="https://www.linkedin.com/in/krupadulobo12/" <i class="fa-brands fa-linkedin"></i><a/>
+              <a href="https://github.com/Thisaintkrupaa" <i class="fa-brands fa-github"></i><a/>
+              <a href="616262179494035487"<i class="fa-brands fa-discord"></i><a/>
+            </div>
+      
+    </section>
+  </main>
+</body>
+
+</html>
