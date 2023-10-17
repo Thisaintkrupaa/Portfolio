@@ -16,13 +16,15 @@
   <div id="header">
       <nav>
         <img src="Images Portfolio/logo.png" width="200px" height="100px" class="Logo" />
-        <ul>
-          <li class="tab"><a href="#">Home</a></li>
-          <li class="tab"><a href="#">About</a></li>
-          <li class="tab"><a href="#">Portfolio</a></li>
-          <li class="tab"><a href="#">Contact</a></li>
+        <ul id="sidemenu">
+          <li><a href="header">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="Portfolio">Portfolio</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li class="fas fa-times"></li>
 
         </ul>
+        <i class="fas fa-bars"></i>
       </nav>
   </div>
 
@@ -46,9 +48,9 @@
           </div>
           <div class="about-col-2">
             <h2 class="sub-title">About Me</h2>
-            <p> Hi im krupa hfvlarzifvvilzfvlzfvl`sfvil`sfvl</p>
-            <div class="tab-titles">
+            <p> Hi im krupa a LLB graduate, and a passionate software developer</p>
 
+            <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
               <p class="tab-links" onclick="opentab('Experience')">Experience</p>
               <p class="tab-links" onclick="opentab('Education')">Education</p>
@@ -58,10 +60,9 @@
               <ul>
                 <li><span>Web Development</span><br>developing website </li>
               </ul>
-
             </div>
 
-            <div class="tab-contents" id="Experience">
+            <div class="tab-contents active-tab" id="Experience">
               <ul>
                 <li><span>Web Development</span><br>developing website </li>
               </ul>
@@ -77,13 +78,6 @@
               </ul>
 
             </div>
-
-
-
-
-
-
-
           </div>
         </div>
       </div>
@@ -92,8 +86,8 @@
       <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-          for (tablink of tablinks) {
+        function opentab(tabname){
+          for (tablink of tablinks){
             tablink.classList.remove("active-link");
           }
 
@@ -177,8 +171,9 @@
       <section class="page-section footer" id="footer"></section>
       <p> &copy; 2023 Krupa Dulobo</p>
     </footer>
-  </main>
 
+
+  </main>
 
 </body>
 
